@@ -4,7 +4,6 @@ function isOnline() {
 
   if(navigator.onLine) {
     getImages();
-    console.log("connected");
   }
   else {
     document.getElementById('imageBag').innerHTML = "You are not connected to the internet...Please, connect to the internet!";
@@ -25,7 +24,7 @@ function getIndex(size) {
 //get images from unplash api
 function getImages() {
   debugger;
-  let likes = ['India','Maharashtra', 'Pune', 'Kashmir', 'Delhi', 'France', 'Europe', 'Russia', 'Birds', 'Canada', 'Australia', 'korea', 'Africa', 'Bhutan', 'Asia', 'Italy', 'Thailand', 'Japan', 'Croatia', 'Israel', 'Flowers', 'Nature', 'Mumbai', 'Animals'];
+  let likes = ['India','Maharashtra', 'Pune', 'Kashmir', 'Delhi', 'France', 'Europe', 'Russia', 'Birds', 'Canada', 'Australia', 'korea', 'Africa', 'Bhutan', 'Asia', 'Italy', 'Thailand', 'Japan', 'Croatia', 'Israel', 'Flowers', 'Nature', 'switzerland', 'Animals'];
   let container = document.getElementById('imageBag');
   let randomIndex = getIndex(likes.length);
 
