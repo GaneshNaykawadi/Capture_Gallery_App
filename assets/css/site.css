@@ -65,7 +65,7 @@ nav {
   display: grid;
   color: #fff;
   margin-top: 5vh;
-  margin-bottom: 15vh;
+  margin-bottom: 17vh;
   padding: 22px;
   grid-template-columns: auto auto auto;
   gap: 20px 20px;
@@ -90,7 +90,7 @@ nav {
 .footer{
     background-color: #222;
     color: #fff;
-    height: 10vh;
+    height: 12vh;
     padding-top: 4vh;
     font-size: 14px;
     bottom: 0;

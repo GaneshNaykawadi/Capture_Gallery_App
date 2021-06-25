@@ -13,7 +13,7 @@ function isOnline() {
 }
 
 function getImages() {
-  
+
   let likes = ['India','maharashtra', 'Pune', 'Banglore', 'Delhi', 'france', 'europe', 'russia', 'uk', 'canada', 'australia', 'korea', 'africa', 'bhutan', 'asia'];
 
   for(let i = 0; i < likes.length; i++) {
