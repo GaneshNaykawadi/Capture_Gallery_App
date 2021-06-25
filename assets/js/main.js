@@ -18,6 +18,6 @@ function getImages() {
 
   for(let i = 0; i < likes.length; i++) {
     var container = document.getElementById('imageBag');
-    container.innerHTML = container.innerHTML +'<img src=\"https://source.unsplash.com/random/1300x1200/?'+likes[i] +'\">';
+    container.innerHTML = container.innerHTML +'<img src=\"https://source.unsplash.com/random/1300x1200/?'+likes[i] +'\" alt=\"image\">';
   }
 }
