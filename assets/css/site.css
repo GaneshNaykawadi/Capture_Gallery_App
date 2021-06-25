@@ -19,7 +19,7 @@
 
 /*===== GLOBAL Colors =====*/
 :root {
-  --first-color: #00ABE1;
+  --first-color: #2a9df4;
   --second-color: #ff1a1a;
   --third-color: #343A40;
   --fourth-color:  #125D98;
@@ -38,6 +38,7 @@ body {
   margin: 0;
   font-family: var(--body-font);
 }
+
 .logo {
   display: flex;
   flex-direction: row;
@@ -59,6 +60,10 @@ nav {
   font-size: var(--h2-font-size);
   color: var(--second-color);
   font-weight: bold;
+}
+
+.nav-button .navbar-nav li a {
+  color: var(--first-color) !important;
 }
 
 .container {
@@ -85,6 +90,32 @@ nav {
   transform: scale(1.04);
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.imgContainer {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.4); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.imgContainer:hover .overlay {
+  opacity: 1;
 }
 
 .footer{

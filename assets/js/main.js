@@ -1,8 +1,7 @@
 
-
-
 // function to check internet connection
 function isOnline() {
+
   if(navigator.onLine) {
     getImages();
     console.log("connected");
@@ -12,12 +11,15 @@ function isOnline() {
   }
 }
 
+//get images from unplash api
 function getImages() {
 
-  let likes = ['India','maharashtra', 'Pune', 'Banglore', 'Delhi', 'france', 'europe', 'russia', 'uk', 'canada', 'australia', 'korea', 'africa', 'bhutan', 'asia'];
+  let likes = ['India','Maharashtra', 'Pune', 'Banglore', 'Delhi', 'France', 'Europe', 'Russia', 'UK', 'Canada', 'Australia', 'korea', 'Africa', 'Bhutan', 'Asia', 'Italy', 'Thailand', 'Japan', 'Croatia', 'Israel', 'Philippines'];
+  let container = document.getElementById('imageBag');
 
   for(let i = 0; i < likes.length; i++) {
-    var container = document.getElementById('imageBag');
-    container.innerHTML = container.innerHTML +'<img src=\"https://source.unsplash.com/random/1300x1200/?'+likes[i] +'\" alt=\"image\">';
+    container.innerHTML = container.innerHTML +'<div class=\"imgContainer\"><img src=\"https://source.unsplash.com/random/1300x1200/?'+likes[i] +'\" class=\"gallery\" alt=\"'+ likes[i]+'\"><div class=\"overlay\"> Beautiful '+ likes[i] +'</div></div>';
   }
+
+  console.log(container.innerHTML);
 }
